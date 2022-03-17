@@ -1,5 +1,5 @@
 """
-templatepython
+secrets_dump
 ---
 """
 from importlib.metadata import version

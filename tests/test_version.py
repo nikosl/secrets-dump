@@ -1,4 +1,4 @@
-from templatepython import __version__, package_version
+from secrets_dump import __version__, package_version
 
 current_version = "0.1.0"
 

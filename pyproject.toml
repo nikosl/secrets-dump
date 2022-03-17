@@ -1,6 +1,6 @@
 [tool.isort]
 profile = "black"
-src_paths = ["templatepython", "tests"]
+src_paths = ["secrets_dump", "tests"]
 
 [tool.mypy]
 disallow_incomplete_defs = true
@@ -11,17 +11,21 @@ namespace_packages = true
 show_error_codes = true
 
 [tool.poetry]
-name = "templatepython"
+name = "secrets_dump"
 version = "0.1.0"
-description = "Template repository for Python projects"
-authors = ["Brendon Smith <br3ndonland@protonmail.com>"]
+description = "Import/Export secret service passwords"
+authors = ["Nikos Leivadaris <nikosleiv@gmail.com>"]
 license = "MIT"
-homepage = "https://github.com/br3ndonland/template-python"
+homepage = "https://github.com/nikosl/secrets-dump"
+repository = "https://github.com/nikosl/secrets-dump"
+keywords = ["secret service", "libsecret", "seahorse", "password"]
 readme = "README.md"
-include = ["templatepython/py.typed"]
+include = ["secrets_dump/py.typed"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
+click = "^8.0.4"
+SecretStorage = "^3.3.1"
 
 [tool.poetry.dev-dependencies]
 black = {version = "*", allow-prereleases = true}
